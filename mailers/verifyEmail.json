@@ -1,0 +1,8 @@
+{
+    "Template": {
+        "TemplateName": "verifyEmailTemplate",
+        "SubjectPart": "Welcome to Ortholoop",
+        "TextPart": "Hi User \n Welcome to Ortholoop. You can complete your registration here {{verifyEmailLink}}.",
+        "HtmlPart": "Hi User <br/> Welcome to Ortholoop. OTP: {{verifyEmailLink}}."
+    }
+}
