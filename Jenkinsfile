@@ -18,7 +18,7 @@ pipeline{
                 script 
                 {
                     sh '''
-                    docker build -t ortholoop -f Dockerfile .
+                    docker build -t govgenie -f Dockerfile .
                     '''
                 }
            }
@@ -31,7 +31,7 @@ pipeline{
                     eval $(aws ecr get-login --region $AWS_DEFAULT_REGION --profile $AWS_PROFILE | sed "s/-e none //")                    
                     docker tag ortholoop:latest $ACCOUNT_NO.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$ECR_REPO:$BUILD_ID                  
                     docker push $ACCOUNT_NO.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$ECR_REPO:$BUILD_ID   
-                    docker rmi ortholoop:latest        
+                    docker rmi govgenie:latest        
                     '''
                 }
            }
