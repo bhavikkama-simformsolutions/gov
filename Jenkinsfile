@@ -7,7 +7,7 @@ pipeline{
         S3_Bucket           = 'govgenie-elasticbeanstalk'
         JOB_NAME            = 'beanstalk'
         APPLICATION_NAME    = 'govgenie'	
-        EB_ENVIRONMENT_NAME = 'Govgenie-env' 
+        EB_ENVIRONMENT_NAME = 'Govgenie-env-1' 
         AWS_PROFILE         = 'default'  
    	
     }
